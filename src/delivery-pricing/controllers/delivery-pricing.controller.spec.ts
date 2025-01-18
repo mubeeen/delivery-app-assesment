@@ -7,7 +7,6 @@ import { of } from 'rxjs';
 
 describe('DeliveryPricingController', () => {
   let controller: DeliveryPricingController;
-  let service: DeliveryPricingService;
 
   // Mocking the dependencies
   const mockConfigService = {
@@ -47,7 +46,7 @@ describe('DeliveryPricingController', () => {
     controller = module.get<DeliveryPricingController>(
       DeliveryPricingController,
     );
-    service = module.get<DeliveryPricingService>(DeliveryPricingService);
+    module.get<DeliveryPricingService>(DeliveryPricingService);
   });
 
   // Test if the controller is defined

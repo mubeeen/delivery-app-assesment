@@ -26,8 +26,8 @@ The **Delivery Pricing Application** calculates the delivery pricing for users b
 
 - **`venue_slug`**: (string) The venue's unique identifier.
 - **`cart_value`**: (number) The value of the user's cart (e.g., `1000`).
-- **`user_lat`**: (number) Latitude of the user's location (e.g., `40.7128`).
-- **`user_lon`**: (number) Longitude of the user's location (e.g., `-74.0060`).
+- **`user_lat`**: (number) Latitude of the user's location (e.g., `60.17094`).
+- **`user_lon`**: (number) Longitude of the user's location (e.g., `24.93087`).
 
 #### Response Example:
 
@@ -150,4 +150,3 @@ This application helps businesses calculate the delivery pricing based on user l
 - The API endpoint `/api/v1/delivery-order-price` expects the correct query parameters to calculate the delivery pricing accurately.
 
 ---
-
