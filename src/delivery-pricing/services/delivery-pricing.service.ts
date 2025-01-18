@@ -86,12 +86,20 @@ export class DeliveryPricingService {
     distanceRanges: any[],
   ): number {
     let fee = basePrice;
+    let isValidDistance = false;
+
     for (const range of distanceRanges) {
       if (distance >= range.min && (distance < range.max || range.max === 0)) {
         fee += range.a + Math.round((range.b * distance) / 10);
+        isValidDistance = true;
         break;
       }
     }
+
+    if (!isValidDistance) {
+      throw new Error('Delivery not available for this distance');
+    }
+
     return fee;
   }
 }
