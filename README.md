@@ -1,4 +1,4 @@
-Certainly! Here's the extended `README.md` with detailed instructions on how to install, set up, and run the application, including all the commands you'll need:
+The application is built using NestJS, a progressive Node.js framework, and TypeScript for strong typing and improved developer experience.
 
 ---
 
