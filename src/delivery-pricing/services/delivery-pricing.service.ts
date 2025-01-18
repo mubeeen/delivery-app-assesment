@@ -4,7 +4,7 @@ import { GetDeliveryPricingDto } from '../dto/get-delivery-pricing.dto';
 import { DeliveryPricingResponse } from '../interfaces/delivery-pricing.interface';
 import { firstValueFrom } from 'rxjs';
 import { ConfigService } from '@nestjs/config';
-import { calculateDistance } from '../utils/calculate-distance.utils';
+import { calculateDistance } from '../../shared/utils/calculate-distance.utils';
 
 @Injectable()
 export class DeliveryPricingService {
